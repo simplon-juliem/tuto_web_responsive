@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>index</title>
+
+</head>
+
+<body>
+
+<h1 id="">Les autres outils pour le responsive Webdesign</h1>
+
+<p>Les sites Web avec un <b>design adaptatif</b> permettent d’afficher un site selon différentes résolutions d’écran prédéfinies. Ces résolutions sont généralement regroupées par type d’appareil, souvent séparées en quatre groupes : <br/>
+Téléphones,<br/>
+Tablettes,<br/>
+Petits écrans d’ordinateur,<br/>
+Grands écrans d’ordinateur.<br/>
+Les sites Web avec un <b>design responsive </b>permettent d’afficher un site selon toutes les résolutions d’écran. Le site Web est fluide, c’est-à-dire qu’il se transforme constamment en offrant toujours la meilleure navigation et la meilleure structure du site.<br/></p>
+<a href="http://blog.wedia-group.com/wp-content/uploads/2015/01/01_Responsive-vs-Adaptive.gif">La différence entre design adaptatif et responsive design en images animées</a>
+
+<p>
+<h3><b>Pour faire une application Web qui soit Responsive Web Design, nous pouvons utiliser les outils suivants :</b></h3>
+</p>
+<ol>
+<li>
+<b>Une grille</b> d'affichage qui soit flexible :<br/>
+autrement dit, un gabarit qui ne dépende pas d'une résolution minimale, maximale ;
+</li>
+<li>
+<b>Les médias flexibles :</b><br/>
+à savoir, faire en sorte que mes images, vidéos (si besoin), ne débordent pas du cadre de notre grille d'affichage/gabarit ;
+</li>
+<li>
+<b>Les Media Queries</b>, un ensemble de règles CSS dédiées aux différents supports:<br/>
+le principe : mettre des conditions sur l'affichage afin d'afficher/masquer, voire changer le rendu de notre application Web.
+</li>
+</ol>
+
+<h2>Grilles fluides</h2>
+<p>
+Une grille est par définition un “quadrillage” composé de repères :
+<br/>
+
+Les colonnes, véritables armatures, elles servent à positionner les éléments à l’horizontale.
+<br/>
+Les gouttières qui représentent les espaces entre chaque colonne.
+<br/>
+Les marges, aussi appelées “blanc tournant”. Surtout utilisées en PAO dans le domaine du prépresse, les marges servent à aérer le texte, il en est de même pour les marges d’une grille.
+<br/>
+Les lignes (axes horizontaux), moins récurrentes mais tout aussi importantes, les lignes servent à positionner les éléments à la verticale.
+<br/>
+<br/>
+<img src="http://netmacom.fr/wp-content/uploads/2013/01/grid_exempleGrille.gif" alt="" />
+<br/>
+<br/>
+<h3>Les gilles Css :</h3>
+<a href="http://960.gs/"> 960 Grid system</a>
+<br/>
+<a href="http://www.thegoldengrid.com/">The golden grid</a>
+
+<br/>
+
+<h3>Liens pour créer sa propre grille :</h3>
+<a href="http://sutterlity.fr/tools/grille-fluide-12-col/css-grille-fluide.pdf">Grille fluide CSS</a>
+<br/>
+
+<a href="http://deercreation.fr/article/creer-une-grille-css-responsive">Deercreation</a>
+<br/>
+<a href="http://blog.lesieur.name/grille-css-responsive-et-semantique-sans-framework/">Quelques #ID</a>
+<br/>
+
+</p>
+<h2>Rendre les médias flexibles</h2>
+<p>
+Pour tous les fichiers images, vidéos, canvas (...), rien de plus simple, il suffit d'ajouter une ligne en CSS et de retirer les tailles fixes écrites dans le code HTML :</p>
+
+
+<p>img {<br/>
+max-width:100%;<br/>
+height:auto; / Adapte la hauteur des médias à la largeur utilisée /<br/>
+width:auto; / Evite les problèmes sur les anciennes versions d'IE /<br/>
+}</p><br/>
+<p>Attention ! Les propriétés width et height fonctionnent uniquement avec des tailles fixes lorsqu'une image de fond est présente, les pourcentages font tout simplement disparaître l'image à l'écran sur certains navigateurs. Heureusement, une propriété CSS 3, background-size, vient régler ce problème en partie. Elle peut prendre plusieurs formes :</p><br/>
+<p>1. background-size : 100%; ou background-size:100% 100%; (largeur puis hauteur lorsqu'il y a deux valeurs)<br/>
+background-size:cover; --> s'adapte à la taille du contenant et rogne ce qui dépasse (une sorte de overflow:hidden;) <br/>
+background-size:contain; --> s'adapte à la taille du contenant sans être rogné </p><br/>
+<p>Ces propriété ne marche pas sur les anciens navigateurs. Il existe bien quelques scripts Javascript pour résoudre ce problème, mais cela rajoute d'autres soucis de compatibilité.</p>
+<h2>Les Media Queries :</h2>
+<p>Vous créez votre design normalement et avec les Media Queries, vous vous chargez d’adapter quelques morceaux. Car en effet, vous n’aurez dans la plupart des cas pas besoin de tout adapter.</p>
+<p>Les Media Queries permettent de cibler :<br/>
+
+Le type de média<br/>
+La taille de l'écran<br/>
+La taille de la fenêtre<br/>
+La résolution<br/>
+Le nombre de couleurs<br/>
+L'orientation</p><br/>
+<p>
+<h3>Exemple de code CSS :</h3>
+<b>/* Smartphones (portrait and landscape) ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (min-device-width : 320px)
+<br/>
+and (max-device-width : 480px) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* Smartphones (landscape) ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (min-width : 321px) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* Smartphones (portrait) ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (max-width : 320px) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* iPads (portrait and landscape) ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (min-device-width : 768px)
+<br/>
+and (max-device-width : 1024px) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* iPads (landscape) ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (min-device-width : 768px)
+<br/>
+and (max-device-width : 1024px)
+<br/>
+and (orientation : landscape) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* iPads (portrait) ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (min-device-width : 768px)
+<br/>
+and (max-device-width : 1024px)
+<br/>
+and (orientation : portrait) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* Desktops and laptops ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (min-width : 1224px) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* Large screens ----------- */</b>
+<br/>
+@media only screen
+<br/>
+and (min-width : 1824px) {
+<br/>
+/* Styles */
+<br/>
+}
+<br/>
+<br/>
+<b>/* iPhone 4 ----------- */</b>
+<br/>
+@media
+<br/>
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+<br/>
+only screen and (min-device-pixel-ratio : 1.5) {
+<br/>
+/* Styles */
+<br/>
+}
+</p>
+</body>
+</html>
