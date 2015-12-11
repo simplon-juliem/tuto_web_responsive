@@ -20,7 +20,7 @@ Les sites Web avec un <b>design responsive </b>permettent d’afficher un site s
 <a href="http://blog.wedia-group.com/wp-content/uploads/2015/01/01_Responsive-vs-Adaptive.gif">La différence entre design adaptatif et responsive design en images animées</a>
 
 <p>
-<h3><b>Pour faire une application Web qui soit Responsive Web Design, nous pouvons utiliser les outils suivants :</b></h3>
+<h3><b>Pour faire une application Web qui soit Responsive, nous pouvons utiliser les outils suivants :</b></h3>
 </p>
 <ol>
 <li>
@@ -98,7 +98,7 @@ Le nombre de couleurs<br/>
 L'orientation</p><br/>
 <p>
 <h3>Exemple de code CSS :</h3>
-<b>/* Smartphones (portrait and landscape) ----------- */</b>
+<pre><b>/* Smartphones (portrait and landscape) ----------- */</b>
 <br/>
 @media only screen
 <br/>
@@ -108,10 +108,10 @@ and (max-device-width : 480px) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
-<b>/* Smartphones (landscape) ----------- */</b>
+<pre><b>/* Smartphones (landscape) ----------- */</b>
 <br/>
 @media only screen
 <br/>
@@ -119,10 +119,10 @@ and (min-width : 321px) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
-<b>/* Smartphones (portrait) ----------- */</b>
+<pre><b>/* Smartphones (portrait) ----------- */</b>
 <br/>
 @media only screen
 <br/>
@@ -130,10 +130,10 @@ and (max-width : 320px) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
-<b>/* iPads (portrait and landscape) ----------- */</b>
+<pre><b>/* iPads (portrait and landscape) ----------- */</b>
 <br/>
 @media only screen
 <br/>
@@ -143,10 +143,10 @@ and (max-device-width : 1024px) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
-<b>/* iPads (landscape) ----------- */</b>
+<pre><b>/* iPads (landscape) ----------- */</b>
 <br/>
 @media only screen
 <br/>
@@ -158,10 +158,10 @@ and (orientation : landscape) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
-<b>/* iPads (portrait) ----------- */</b>
+<pre><b>/* iPads (portrait) ----------- */</b>
 <br/>
 @media only screen
 <br/>
@@ -173,10 +173,10 @@ and (orientation : portrait) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
-<b>/* Desktops and laptops ----------- */</b>
+<pre><b>/* Desktops and laptops ----------- */</b>
 <br/>
 @media only screen
 <br/>
@@ -184,7 +184,7 @@ and (min-width : 1224px) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
 <b>/* Large screens ----------- */</b>
@@ -195,10 +195,10 @@ and (min-width : 1824px) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 <br/>
 <br/>
-<b>/* iPhone 4 ----------- */</b>
+<pre><b>/* iPhone 4 ----------- */</b>
 <br/>
 @media
 <br/>
@@ -208,7 +208,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
 <br/>
 /* Styles */
 <br/>
-}
+}</pre>
 </p>
 </body>
 </html>
+
+<p>Tous les outils proposés ne sont pas à prendre 
