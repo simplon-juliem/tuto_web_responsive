@@ -212,8 +212,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
 </p>
 
 <h2>Conclusion</h2>
-<p> Tous les outils proposés n'apportent pas une solution exhaustive pour le Web Responsive Design. Ayant chacun leurs avantages et leurs inconvénients, ils sont à utiliser en fonction du projet (à compléter ou à remplacer par une solution alternative).
-Google is your friend! ;-)</p>
+<p> Tous les outils proposés n'apportent pas une solution exhaustive pour le Responsive Web Design. Ayant chacun leurs avantages et leurs inconvénients, ils sont à utiliser en fonction du projet. Ils sont à compléter ou à remplacer par une solution alternative dont nous n'avons pas parlé ici (Google is your friend!).
+</p>
 </body>
 </html>
 
